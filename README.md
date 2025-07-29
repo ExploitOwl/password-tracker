@@ -1,5 +1,4 @@
 Loki Don't Trust You Dude — Password Vault
-
 Overview
 Loki Don't Trust You Dude is a secure password vault application written in Python. It uses strong encryption (Fernet symmetric encryption) to protect your saved credentials behind a master password. The program features a simple graphical user interface (GUI) built with Tkinter for easy password management.
 
@@ -14,8 +13,7 @@ Protects your data with a salt-based key derivation function
 
 Fun easter egg: If the wrong master password is entered, a spinning skull image appears!
 
-Installation
-Requirements
+Installation Requirements
 Python 3.7 or higher
 
 cryptography package (pip install cryptography)
@@ -52,16 +50,14 @@ Add new entries by specifying the site, username, password, and security tier.
 Password entries are saved encrypted and can only be accessed with the correct master password.
 
 File Structure
-loki_dont_trust_you_dude.py: Main Python script running the vault GUI and encryption logic.
-
-loki_secret_stash.enc: Encrypted vault file storing your password data.
-
-vault_salt.bin: Salt used for key derivation to ensure encryption security.
-
-skull.png: Image used in the GUI (including the skull easter egg).
+File	Description
+loki_dont_trust_you_dude.py	Main Python script running the vault GUI and encryption logic
+loki_secret_stash.enc	Encrypted vault file storing your password data
+vault_salt.bin	Salt used for key derivation to ensure encryption security
+skull.png	Image used in the GUI (including the skull easter egg)
 
 Security Notes
-Your master password is never stored in plain text; it's used to derive the encryption key.
+Your master password is never stored in plain text; it’s used to derive the encryption key.
 
 Salt ensures that even if the master password is weak, encryption remains strong against common attacks.
 
@@ -78,3 +74,4 @@ Support for exporting and importing encrypted vault data
 
 About
 This project is part of my self-guided learning in cybersecurity and Python programming. It reflects the real-world challenges of building secure applications beyond classroom theory.
+
